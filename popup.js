@@ -51,6 +51,9 @@ document
   .addEventListener('DOMContentLoaded', function () {
     getCurrentTabUrl(function (url) {
       if (url.startsWith('https://www.youtube.com/watch')) {
+                renderStatus('Open Youtube Video Page! :)');
+                        renderStatus('Saving Video. Please wait..');
+
         sendYoutubeUrl(url, {
           success: function (res) {
             renderStatus(res.message)
