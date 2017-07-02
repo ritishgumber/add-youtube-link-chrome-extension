@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Add video to your list",
+  "description": "This extension adds this video to your list",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://youtube-chrome-extension.herokuapp.com/"
+  ]
+}
